@@ -60,4 +60,14 @@ public class Drawer {
         }
         System.out.println("Done.");
     }
+
+    public static void drawFromRawDataWithMultiThread(TreeMap<String, TreeMap<String, Integer>> casesByStateAndDate, String outputFolder) throws IOException {
+        System.out.println("Drawing images from raw data...");
+        for (Map.Entry<String, TreeMap<String, Integer>> entry : casesByStateAndDate.entrySet()) {
+            String state = entry.getKey();
+            DrawerThread drawerThread = new DrawerThread(state, entry.getValue(), outputFolder);
+            drawerThread.start();
+        }
+        System.out.println("Done.");
+    }
 }

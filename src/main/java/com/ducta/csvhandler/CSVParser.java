@@ -11,7 +11,6 @@ public class CSVParser {
     private static final String CSV_EXTENSION = ".csv";
     private static final String PREFIX = "cdc-state-case-counts-";
 
-    //    private HashMap<String, Integer> casesByDate = new HashMap<>();
     private final TreeMap<String, TreeMap<String, Integer>> casesByStateAndDate = new TreeMap<>();
 
     private final File[] listFiles;

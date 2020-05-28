@@ -69,6 +69,15 @@ public class Main {
                     printOptions();
                     break;
                 case "4":
+                    if (casesByStateAndDate != null) {
+                        Drawer.drawFromRawDataWithMultiThread(casesByStateAndDate, outputFolder);
+                        System.out.println("Done. Choose next option.");
+                    } else {
+                        System.out.println("Please parse data from csv files first!");
+                    }
+                    printOptions();
+                    break;
+                case "5":
                     exit = true;
                     break;
             }
@@ -81,7 +90,8 @@ public class Main {
         System.out.println("1. Parse data from CSV files.");
         System.out.println("2. Save parsed data to H2 DB");
         System.out.println("3. Create charts from raw data.");
-        System.out.println("4. Exit");
+        System.out.println("4. Create charts from raw data with MultiThread");
+        System.out.println("5. Exit");
 
     }
 }
