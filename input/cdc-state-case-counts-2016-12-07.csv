@@ -1,0 +1,54 @@
+state_or_territory,travel_associated_cases,locally_acquired_cases
+Alabama,30,0
+Arizona,51,0
+Arkansas,13,0
+California,375,0
+Colorado,50,0
+Connecticut,58,0
+Delaware,17,0
+District of Columbia,27,0
+Florida,785,184
+Georgia,104,0
+Hawaii,14,0
+Idaho,4,0
+Illinois,85,0
+Indiana,47,0
+Iowa,19,0
+Kansas,17,0
+Kentucky,24,0
+Louisiana,35,0
+Maine,13,0
+Maryland,125,0
+Massachusetts,106,0
+Michigan,63,0
+Minnesota,55,0
+Mississippi,23,0
+Missouri,36,0
+Montana,7,0
+Nebraska,13,0
+Nevada,18,0
+New Hampshire,12,0
+New Jersey,164,0
+New Mexico,9,0
+New York,942,0
+North Carolina,83,0
+North Dakota,2,0
+Ohio,75,0
+Oklahoma,29,0
+Oregon,39,0
+Pennsylvania††,161,0
+Rhode Island,35,0
+South Carolina,54,0
+South Dakota,2,0
+Tennessee,58,0
+Texas,268,1
+Utah,19,0
+Vermont,10,0
+Virginia,95,0
+Washington,58,0
+West Virginia,11,0
+Wisconsin,48,0
+Wyoming,2,0
+American Samoa,0,57
+Puerto Rico,124,32848
+US Virgin Islands,2,807
