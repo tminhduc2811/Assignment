@@ -1,2 +1,5 @@
-com\ducta\color\Color.class
+com\ducta\drawer\Drawer.class
+com\ducta\drawer\DrawerThread.class
+com\ducta\h2handler\H2Handler.class
 com\ducta\Main.class
+com\ducta\csvhandler\CSVParser.class
