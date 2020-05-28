@@ -4,14 +4,14 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.HashMap;
+
 import java.util.Map;
 import java.util.TreeMap;
 
 public class H2Handler {
 
-    static final String DRIVER = "org.h2.Driver";
-    static final String DB_URL = "jdbc:h2:file:D:\\Project\\Java\\assignment\\db";
+    private static final String DRIVER = "org.h2.Driver";
+    private String DB_URL = "jdbc:h2:file:";
 
     //  Database credentials
     static final String USER = "sa";
@@ -19,8 +19,10 @@ public class H2Handler {
 
     private final TreeMap<String, TreeMap<String, Integer>> casesByStateAndDate;
 
-    public H2Handler(TreeMap<String, TreeMap<String, Integer>> casesByStateAndDate) {
+
+    public H2Handler(TreeMap<String, TreeMap<String, Integer>> casesByStateAndDate, String dbPath) {
         this.casesByStateAndDate = casesByStateAndDate;
+        this.DB_URL += dbPath;
     }
 
     private String getDateFromFileName(String fileName) {

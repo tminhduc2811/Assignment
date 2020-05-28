@@ -18,7 +18,7 @@ import java.util.TreeMap;
 
 public class Drawer {
 
-    public static void drawFromRawData(TreeMap<String, TreeMap<String, Integer>> casesByStateAndDate) throws IOException {
+    public static void drawFromRawData(TreeMap<String, TreeMap<String, Integer>> casesByStateAndDate, String outputFolder) throws IOException {
         System.out.println("Drawing images from raw data...");
         for (Map.Entry<String, TreeMap<String, Integer>> entry : casesByStateAndDate.entrySet()) {
             String state = entry.getKey();
@@ -55,7 +55,7 @@ public class Drawer {
                     false);
             int width = 560;   /* Width of the image */
             int height = 370;  /* Height of the image */
-            File timeChart = new File("./output/" + state + ".PNG");
+            File timeChart = new File(outputFolder + "/" + state + ".PNG");
             ChartUtilities.saveChartAsJPEG(timeChart, timechart, width, height);
         }
         System.out.println("Done.");

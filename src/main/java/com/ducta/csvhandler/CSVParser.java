@@ -16,7 +16,7 @@ public class CSVParser {
 
     private final File[] listFiles;
 
-    public CSVParser(File[] listFiles, String dbPath) {
+    public CSVParser(File[] listFiles) {
         this.listFiles = listFiles;
     }
 
@@ -56,7 +56,6 @@ public class CSVParser {
                         casesByDate = new TreeMap<>();
                         cases = Integer.parseInt(nextRecord[1]) + Integer.parseInt(nextRecord[2]);
                     }
-                    System.out.println("data " + nextRecord[0] + " " + nextRecord[1] + " " + nextRecord[2] + " " + cases.toString() + " " + fileDate);
                     casesByDate.put(fileDate, cases);
                     this.casesByStateAndDate.put(nextRecord[0], casesByDate);
                 }
